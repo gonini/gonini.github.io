@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[알고리즘 문제] 다음 큰 숫자이지요  "
+title:  "Best Time to Buy and Sell Stock III"
 subtitle:   "알고리즘 문제"
-categories: study
-tags: algorithmproblem
-comments: false
+categories: algorithm
+tags: dp
+comments: true
 ---
 
 * 정수형 주가 리스트가 주어진다. 최대 이익을 계산하라.  2번의 트렌젝션을 발생 시킬 수 있다.  
