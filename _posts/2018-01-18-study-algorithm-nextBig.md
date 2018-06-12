@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[알고리즘 문제] 다음 큰 숫자 "
+title:  "[알고리즘 문제] 다음 큰 숫자이지요  "
 subtitle:   "알고리즘 문제"
 categories: study
 tags: algorithmproblem
