@@ -123,7 +123,40 @@ Wagner–Fischer 알고리즘은 첫 번째 문자열의 모든 접두사와 두
 |  t |  3 | 3 | 3 | 3 | 4 |
 |  e |  4 | 3 | 4 | 3 | 4 |
 
-‘exec’ 와  ‘inte’ 의 편집거리는 4이다.   
+‘exec’ 와  ‘inte’ 의 편집거리는 4가 된다.   
+
+
+```
+class Solution {
+public:
+    int minDistance(string word1, string word2) {
+      const int N = (int) word1.size() > word2.size() ? word1.size() : word2.size();
+      vector<vector<int>> dp(N+1, vector<int>(N+1, 0) );
+
+      for(int i = 0; i <= N; i++)
+      {
+          dp[0][i] = i;
+          dp[i][0] = i;
+      }
+
+      for(int i = 1; i <= word1.size(); i++)
+      {
+          for(int j = 1; j <= word2.size(); j++)
+          {
+
+              int replace = dp[i-1][j-1] + (word1[i-1] != word2[j-1]);
+              int insert = dp[i-1][j] + 1;
+              int remove = dp[i][j-1] + 1;
+
+              dp[i][j] = min(replace, min(insert, remove));
+          }
+      }    
+    return dp[word1.size()][word2.size()];
+  }
+};
+```  
+
+
 
 **footnote**  
 [Wagner–Fischer algorithm - Wikipedia](https://en.wikipedia.org/wiki/Wagner%E2%80%93Fischer_algorithm)  
