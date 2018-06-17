@@ -13,7 +13,7 @@ url:                 https://gonini.github.io
 baseurl:             "/"
 
 # A very short description of your page
-tagline:             GoniLog
+tagline:             개으름에 대한 찬양
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
