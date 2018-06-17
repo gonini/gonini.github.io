@@ -7,6 +7,8 @@ tags: dp
 comments: true
 ---
 
+[Edit Distance - LeetCode](https://leetcode.com/problems/edit-distance/description/)    
+
 * 두 단어가 주어진다. 이 둘을 각각 word1, word2 이라 부른다. 교체, 삭제, 삽입 연산을 사용하여 word1을 word2로 변환할 수 있다. 이 때 최소 연산 횟수를 반환하라.   
 * 각 연산은 한 문자에만 적용할 수 있다.  
 
