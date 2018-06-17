@@ -45,7 +45,7 @@ int minDistance(string word1, string word2) {
 ---
 
 **Solution**  
-Wagner–Fischer 알고리즘은 교체, 삭제, 삽입의 연산을 기반으로 서로 다른 두 문자열 이 동일해 질 수 있는 최소 거리를 계산한다. 이러한 최소 거리를  Levenshtein distance 또는 Edit distance 라 부르는데 일반적인 상황에서 이 둘이 의미하는 바는 동일하다.  여기서는 Edit distance라 부르겠다. Edit distance는 주로 NLP 프로그램에서 입력된 자연어와 사전의 단어들 간 편집거리를 바탕으로 단어간 유사도를 측정하여 자동 맞춤법 교정 후보를 선출하는데 사용될 수 있다. 
+Wagner–Fischer 알고리즘은 교체, 삭제, 삽입의 연산을 기반으로 서로 다른 두 문자열 이 동일해 질 수 있는 최소 거리를 계산한다. 이러한 최소 거리를  Levenshtein distance 또는 Edit distance 라 부르는데 일반적인 상황에서 의미하는 바는 동일하다.  여기서는 Edit distance라 부르겠다. Edit distance는 주로 NLP 프로그램에서 입력된 자연어와 사전의 단어들 간 편집거리를 바탕으로 단어간 유사도를 측정하여 자동 맞춤법 교정 후보를 선출하는데 사용될 수 있다. 
 
 > kitten → sitten ( “k” -> “s”  교체 )   
 > sitten → sittin ("e" -> “i” 교체  )  
