@@ -1,7 +1,7 @@
 ---
 layout: list
 title: Object-Oriented
-slug: OOP
+slug: oop
 menu: true
 submenu: true
 order: 8
