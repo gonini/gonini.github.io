@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Design Pattern
-slug: designPattern
+title: OOP
+slug: Object-Oriented Programming
 menu: true
 submenu: true
 order: 8
