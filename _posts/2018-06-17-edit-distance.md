@@ -125,7 +125,7 @@ Wagner–Fischer 알고리즘은 첫 번째 문자열의 모든 접두사와 두
 
 ‘exec’ 와  ‘inte’ 의 편집거리는 4이다.   
 
-**footnote**
+**footnote**  
 [Wagner–Fischer algorithm - Wikipedia](https://en.wikipedia.org/wiki/Wagner%E2%80%93Fischer_algorithm)  
 [Levenshtein distance - Wikipedia](https://en.wikipedia.org/wiki/Levenshtein_distance)  
 [Edit distance - Wikipedia](https://en.wikipedia.org/wiki/Edit_distance)  
