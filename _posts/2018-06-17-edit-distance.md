@@ -55,7 +55,7 @@ Wagner–Fischer 알고리즘은 교체, 삭제, 삽입의 연산을 기반으�
 
 Wagner–Fischer 알고리즘은 첫 번째 문자열의 모든 접두사와 두 번째 문자열의 모든 접두사 간 편집거리를 행렬에 채워가며 현재 편집 거리를 계산하는데 이용하는 것이다.  점화식은 아래와 같다.
 
-![](https://github.com/gonini/gonini.github.io/blob/master/assets/img/edit_distance.png)  
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/1deeeaebff36dc4bdc79778bcafe0ec17ce63f83)  
 
 > 삭제 -> `m[i-1][j] + 1`  
 > 삽입 -> `m[i][j-1] + 1`  
