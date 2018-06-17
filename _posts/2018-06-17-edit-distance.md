@@ -10,7 +10,7 @@ comments: true
 * 두 단어가 주어진다. 이 둘을 각각 word1, word2 이라 부른다. 교체, 삭제, 삽입 연산을 사용하여 word1을 word2로 변환할 수 있다. 이 때 최소 연산 횟수를 반환하라.   
 * 각 연산은 한 문자에만 적용할 수 있다.  
 
-**Example 1**
+**Example 1**  
 ```
 Input: word1 = "horse", word2 = "ros"
 Output: 3
@@ -20,7 +20,7 @@ rorse -> rose (remove 'r')
 rose -> ros (remove 'e')
 ```
 
-**Example 2**
+**Example 2**  
 ```
 Input: word1 = "intention", word2 = "execution"
 Output: 5
@@ -32,7 +32,7 @@ exention -> exection (replace 'n' with 'c')
 exection -> execution (insert 'u')
 ```
 
-**Code**
+**Code**  
 ```
 class Solution {
 public:
@@ -44,7 +44,7 @@ int minDistance(string word1, string word2) {
 
 ---
 
-**Solution**
+**Solution**  
 Wagner–Fischer 알고리즘은 교체, 삭제, 삽입의 연산을 기반으로 서로 다른 두 문자열 이 동일해 질 수 있는 최소 거리를 계산한다. 이러한 최소 거리를  Levenshtein distance 또는 Edit distance 라 부르는데 일반적인 상황에서 이 둘이 의미하는 바는 동일하다.  여기서는 Edit distance라 부르겠다. Edit distance는 주로 NLP 프로그램에서 입력된 자연어와 사전의 단어들 간 편집거리를 바탕으로 단어간 유사도를 측정하여 자동 맞춤법 교정 후보를 선출하는데 사용될 수 있다. 
 
 > kitten → sitten ( “k” -> “s”  교체 )   
@@ -87,7 +87,7 @@ Wagner–Fischer 알고리즘은 첫 번째 문자열의 모든 접두사와 두
 
 채워야할 칸은   `m[4][3]` ,  `m[4][4]`  이다.  `m[4][4]` 를 구하기 위해서는 `m[4][3]`이 필요하다. `m[4][3]`이 의미하는 것은  ‘inte’ -> ‘exe’ 의 편집거리이다.  각 연산에 대해 살펴보자. 
 
-**‘inte’ -> ‘exe’ 의 편집거리**
+**‘inte’ -> ‘exe’ 의 편집거리**  
 
 * 수정  
 ‘inte’ 에서 e를 e로 수정하여 ‘exe’ 가 되는 편집 거리를 계산해야한다. 그렇다.  이미 수정하려는 문자와 동일하기 때문에 수정할 필요가 없다.  수정에 대한 비용은 고려하지 않아도 된다.  ‘e’ 는 원하는 단어다. 이제 ‘e’를 제외한 ‘int’ 와 ‘ex’ 의 편집 거리를 구하면 되지 않을까? ‘int’ 와 ‘ex’ 의 편집 거리 + 수정 연산은 ‘inte’ 에서 e를 e로 수정하여 ‘exe’ 가 되는 편집 거리가 된다! 물론   ‘int’ -> ‘ex’   `m[3][2]` 는 이미 구해져 있다.  수정할 필요가 없었으니 `m[3][2] + 0` 이 된다.
@@ -111,7 +111,7 @@ Wagner–Fischer 알고리즘은 첫 번째 문자열의 모든 접두사와 두
 |  t |  3 | 3 | 3 | 3 | 4 |
 |  e |  4 | 3 | 4 | 3 |   |
 
-**‘inte’ -> ‘exec’ 의 편집거리**
+**‘inte’ -> ‘exec’ 의 편집거리**  
 
 위와 동일한 방일하게 m[4][4] 를 구할 수 있다.  `m[4][4]` = min( `m[3][3] + 1`,  `m[3][4] + 1`,  `m[4][3] + 1`)  가장 작은 수는 4이며, 동시에 편집거리가 된다.   
 
