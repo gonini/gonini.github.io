@@ -28,10 +28,10 @@ comments: true
 
 [GitHub - mroderick/refactoring-day](https://github.com/mroderick/refactoring-day)
 
-![](/대한assets/img/olfactory_symptom.jpg)
+![](/assets/img/olfactory_symptom.jpg)
 
 ### 코드 악취는 후각 상실 기간이 길어도 치료할 수 있습니다.
 
 잘못된 코드에 대한 인식이 없는 사람이 작성한 코드는 악취가 스며들어있다.  
-악취를 맡지 못하는 것이다.  
+악취를 맡지 못하는 것이다. 인식이 없다면 계속 그런 코드를 작성할 것이다.
 레거시 프로그램을 리팩토링 하던 중 막연히 든 생각을 적었다.
