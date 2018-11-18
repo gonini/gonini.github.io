@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "비디오 대여점과 잘못된 코드 인식"
-subtitle: 아무말 적기
+subtitle: 
 categories: etc
 tags: thinking
 comments: true
